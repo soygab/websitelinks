@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <!-- if i knew what this did, i'd tell you -->
+  <meta charset="utf-8" />
+  <html lang="pt-br">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- seo + discord embed -->
+  <meta content="gabriel" property="og:title" />
+  <meta content="gabriel" property="og:description" />
+  <meta content="https://gabrielcoffee.com" property="og:url" />
+  <meta content="gabriel" name="description" />
+  <meta content="#b145bf" data-react-helmet="true" name="theme-color" />
+
+  <!-- title + favicon -->
+  <title>gabriel | welcome</title>
+  <link rel="shortcut icon" type="image/jpg" href="assets/img/coffee.png"/>
+
+  <!-- assets -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+  <div class="intro">
+    <p id="intro-text"></p>
+  </div>
+
+  <div class="bg-image" style="display: none"></div>
+
+  <div class="main" style="display: none">
+    <div class="box">
+      <div class="header">
+        <p class="maintext">gabriel</p>
+        <span class="subtext"
+          ><p id="subtext"></p>
+          </span
+        >
+      </div>
+<!--footer embed for home screen--!>
+      <div class="footer">
+        <img src="assets/img/insta_branco.png" class="social-logo" onclick="openSocial('instagram')"></img>
+        <img src="assets/img/github.png" class="social-logo" onclick="openSocial('github')"></img>
+        <img src="assets/img/twitter-512.png" class="social-logo" onclick="openSocial('twitter')"></img>
+        <img src="assets/img/spotify.png" class="social-logo" onclick="openSocial('spotify')"></img>
+      </div>
+    </div>
+  </div>
+</body>
