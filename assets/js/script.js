@@ -40,7 +40,7 @@ function startIntroTyping() {
 function typerStartTyping(typer) {
   typer.reset();
 
-  let text = ['front-end'];
+  let text = ['front-end developer'];
 
   text.forEach(function (language, index) {
     typer.move(null);
@@ -55,7 +55,7 @@ function typerStartTyping(typer) {
 
 function startMainTyping() {
   let typer = new TypeIt('#subtext', {
-    speed: 50,
+    speed: 100,
     afterComplete: async () => {
       typerStartTyping(typer);
     },
@@ -74,7 +74,7 @@ function switchScreen() {
     });
   });
 
-  ['background', 'rain'].forEach(function (audioName) {
+  ['', ''].forEach(function (audioName) {
     let fullPath = `assets/audio/${audioName}.mp3`;
 
     let audioElement = document.createElement('audio');
